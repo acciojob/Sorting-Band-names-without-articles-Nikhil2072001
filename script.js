@@ -1,10 +1,11 @@
+let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+
+// So here the lexicographically sorted order is (without articles)---
+touristSpots = ['Tajmahal', 'Victoria Memorial', 'The Virupaksha Temple'];
+
+
 //your code here
-let str = "";
-let touristSpots = ['Tajmahal', 'Victoria Memorial', 'The Virupaksha Temple'];
-for(let i = 0; i < 3; i++){
-	str += `<li>${touristSpots[i]}</li>`
-}
-const bandNames = ['The Beatles', 'Led Zeppelin', 'Pink Floyd', 'The Who', 'Aerosmith', 'Rolling Stones', 'Queen', 'Anthrax', 'Black Sabbath'];
+	const bandNames = ['The Beatles', 'Led Zeppelin', 'Pink Floyd', 'The Who', 'Aerosmith', 'Rolling Stones', 'Queen', 'Anthrax', 'Black Sabbath'];
 
 		function sortBands(bands) {
 			const articles = ['the', 'a', 'an'];
@@ -30,5 +31,3 @@ const bandNames = ['The Beatles', 'Led Zeppelin', 'Pink Floyd', 'The Who', 'Aero
 			li.appendChild(document.createTextNode(band));
 			bandList.appendChild(li);
 		});
-
-document.getElementById("band").innerHTML = str;
